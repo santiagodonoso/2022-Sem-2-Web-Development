@@ -49,6 +49,7 @@ for( $i = 0; $i < 2; $i++ ){
   array_push($results, $flights[$i]);
 }
 
+
 echo json_encode($results );
 
 
