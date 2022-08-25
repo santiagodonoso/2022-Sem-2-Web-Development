@@ -44,8 +44,9 @@ if(  $_GET['page'] > 5  ){
 }
 
 $page_number = $_GET['page'];
+$search_to = $page_number + 2;
 $results = [];
-for( $i = 0; $i < 2; $i++ ){
+for( $i = $page_number; $i < $search_to; $i++ ){
   array_push($results, $flights[$i]);
 }
 
