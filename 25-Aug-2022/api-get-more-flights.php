@@ -27,6 +27,19 @@ if(  ! ctype_digit($_GET['page'])  ){
   exit();
 }
 
+if(  $_GET['page'] < 1  ){
+  http_response_code(400);
+  echo json_encode(['info'=>'pagination must be at least 1']);
+  exit();
+}
+
+if(  $_GET['page'] > 5  ){
+  http_response_code(400);
+  echo json_encode(['info'=>'pagination cannot be more than 5']);
+  exit();
+}
+
+
 echo json_encode($flights);
 
 
