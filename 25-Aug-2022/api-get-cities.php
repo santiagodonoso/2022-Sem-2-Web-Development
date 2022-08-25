@@ -10,6 +10,14 @@ ini_set('display_errors', '1');
 // Multidimensional Assosiative array
 
 $search_for = $_GET['city_name'];
+
+if( ! isset($_GET['city_name']) ){
+  http_response_code(400);
+  echo json_encode(['info'=>'missing city_name variable']);
+  exit();
+}
+
+
 // Defensive programming - Paranoid
 if( strlen($search_for) < 1 ){
   http_response_code(400);
