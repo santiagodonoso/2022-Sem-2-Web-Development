@@ -25,6 +25,13 @@ $flights = [
 ];
 
 // Validate
+if( ! isset($_GET['page']) ){
+  http_response_code(400);
+  echo json_encode(['info'=>'missing page variable']);
+  exit();
+}
+
+
 if(  ! ctype_digit($_GET['page'])  ){
   http_response_code(400);
   echo json_encode(['info'=>'pagination only allows numbers']);
@@ -43,7 +50,7 @@ if(  $_GET['page'] > 5  ){
   exit();
 }
 
-$page_number = $_GET['page'];
+$page_number = $_GET['page'] * 2;
 $search_to = $page_number + 2;
 $results = [];
 for( $i = $page_number; $i < $search_to; $i++ ){
