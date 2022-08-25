@@ -7,6 +7,10 @@
 
 // Pagination getting 2 fligts per page
 
+// number -1 + 2 the page number
+// Page number is 1
+// 
+
 $flights = [
   ['name'=>'1'],
   ['name'=>'2'],
@@ -27,7 +31,7 @@ if(  ! ctype_digit($_GET['page'])  ){
   exit();
 }
 
-if(  $_GET['page'] < 1  ){
+if(  $_GET['page'] < 0  ){
   http_response_code(400);
   echo json_encode(['info'=>'pagination must be at least 1']);
   exit();
@@ -39,8 +43,13 @@ if(  $_GET['page'] > 5  ){
   exit();
 }
 
+$page_number = $_GET['page'];
+$results = [];
+for( $i = 0; $i < 2; $i++ ){
+  array_push($results, $flights[$i]);
+}
 
-echo json_encode($flights);
+echo json_encode($results );
 
 
 
