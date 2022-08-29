@@ -21,7 +21,6 @@
     if( $_SESSION ){
       echo '<a href="admin.php">Admin</a>';
     }
-<<<<<<< HEAD
  
     
     if( ! $_SESSION ){
