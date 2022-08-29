@@ -27,20 +27,14 @@
       echo '<a href="login.php">Login</a>';
     }
     
-
-
-=======
     ?>
     
-
-
 
     <a href="login.php">Login</a>
 
 
 
     <?php
->>>>>>> dea613cfcac84006f710b7fb43c09e3692510817
     if( $_SESSION ){
       echo '<a href="logout.php">Signout</a>';
     }
