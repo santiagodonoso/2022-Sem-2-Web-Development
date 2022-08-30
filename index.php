@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body oncontextmenu="return false;">
 
   <header>  
     <div>
@@ -24,8 +24,8 @@
   <div id="flights-search">
     <form>
       <div id="from-container">
-        <input type="text" placeholder="from" 
-          onfocus="show_from_results()"
+        <input id="from-input" type="text" placeholder="from" 
+          oninput="show_from_results()"
           onblur="hide_from_results()"
         >
         <div id="from-results">
