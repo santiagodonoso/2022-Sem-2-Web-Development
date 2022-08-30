@@ -38,7 +38,8 @@ div#flights-search div#from-container{
 
 }
 div#flights-search div#from-container div#from-results{
-  width: 20vw;
+  display: none;
+  width: 100%;
   height: 20rem;
   background: white;
 }

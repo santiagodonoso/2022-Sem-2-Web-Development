@@ -24,7 +24,10 @@
   <div id="flights-search">
     <form>
       <div id="from-container">
-        <input type="text" placeholder="from">
+        <input type="text" placeholder="from" 
+          onfocus="show_from_results()"
+          onblur="hide_from_results()"
+        >
         <div id="from-results">
 
         </div>
@@ -44,6 +47,8 @@
   <footer>
     footer
   </footer>
+
+  <script src="app.js"></script>
 
 </body>
 </html>
