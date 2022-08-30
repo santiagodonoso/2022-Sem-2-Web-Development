@@ -19,8 +19,9 @@ async function get_cities_from(){
   let conn = await fetch('api-get-cities-from')
   let data = await conn.json() // [{"city_name":"a"},{"city_name":"b"}]
   let div_city = `<div class="from-city">
-                    <img src="city.png">
+                    <img src="#img#">
                     <p>xxx</p>
+                    <p>Population: #population#</p>
                   </div>`    
   let all_cities = ""
   //        0                1                    2
@@ -31,6 +32,8 @@ async function get_cities_from(){
     console.log(city_name)
     let copy_div_city = div_city
     copy_div_city = copy_div_city.replace("xxx", city_name)
+    copy_div_city = copy_div_city.replace("#img#", city.city_image)
+    copy_div_city = copy_div_city.replace("#population#", city.city_population)
     all_cities += copy_div_city
   }               
   console.log(data)

@@ -49,6 +49,11 @@ div.from-city{
   justify-content: space-between;
   padding: 1rem;
 }
+div.from-city img{
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.2rem;
+}
 
 
 div#main{
