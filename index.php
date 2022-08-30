@@ -22,7 +22,14 @@
   </header>
 
   <div id="flights-search">
+    <form>
+      <div id="from-container">
+        <input type="text" placeholder="from">
+        <div id="from-results">
 
+        </div>
+      </div>
+    </form>
   </div>
 
   <div id="main">

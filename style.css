@@ -3,6 +3,15 @@
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.1rem;
+}
+input{
+  height: 4rem;
+  padding: 0 1rem;
+  outline: none;
+  border-radius: 1rem;
+  border: 0px;
+  background: rgba(255, 255, 255, 0.5);
 }
 body{
   width: 100vw;
@@ -22,8 +31,19 @@ header{
 div#flights-search{
   width: 100vw;
   height: 20rem;
+  padding: 2rem 1rem;
   background: rgba(33, 3, 58, 0.5);
 }
+div#flights-search div#from-container{
+
+}
+div#flights-search div#from-container div#from-results{
+  width: 20vw;
+  height: 20rem;
+  background: white;
+}
+
+
 div#main{
   display: flex;
   width: 100vw;
