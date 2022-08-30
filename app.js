@@ -7,9 +7,21 @@ function show_from_results(){
   }
   // document.querySelector("#from-results").style.display = "block"
 }
+ 
+// ##############################
 function hide_from_results(){
   document.querySelector("#from-results").style.display = "none"
 }
+
+// ##############################
+async function get_cities_from(){
+  let conn = await fetch('api-get-cities-from')
+  let data = await conn.json()
+  console.log(data)
+}
+
+
+
 
 
 

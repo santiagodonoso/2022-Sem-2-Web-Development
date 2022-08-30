@@ -25,6 +25,7 @@
     <form>
       <div id="from-container">
         <input id="from-input" type="text" placeholder="from" 
+          onfocus="get_cities_from()"  
           oninput="show_from_results()"
           onblur="hide_from_results()"
         >
