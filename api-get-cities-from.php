@@ -1,8 +1,8 @@
 <?php
 $cities = [
-  ['city_name'=>'a'],
-  ['city_name'=>'b'],
-  ['city_name'=>'c']
+  ['city_name'=>'Copenhagen'],
+  ['city_name'=>'Oslo'],
+  ['city_name'=>'Miami']
 ];
 echo json_encode($cities);
 

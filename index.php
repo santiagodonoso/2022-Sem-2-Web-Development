@@ -24,14 +24,16 @@
   <div id="flights-search">
     <form>
       <div id="from-container">
-        <input id="from-input" type="text" placeholder="from" 
-          onfocus="get_cities_from()"  
+        <input id="from-input" type="text" placeholder="from"           
           oninput="show_from_results()"
           onblur="hide_from_results()"
         >
+     
         <div id="from-results">
-
+           
         </div>
+       
+
       </div>
     </form>
   </div>

@@ -43,6 +43,12 @@ div#flights-search div#from-container div#from-results{
   height: 20rem;
   background: white;
 }
+div.from-city{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
 
 
 div#main{
