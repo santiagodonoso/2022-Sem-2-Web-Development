@@ -15,7 +15,7 @@ require_once __DIR__.'/dictionary.php';
     <a href=<?= "houses.php?language=".$language ?>>
       <?= $dictionary[$language.'_houses'] ?>
     </a>
-    <a href=<?= "cars.php?language=".$language ?>>
+    <a href="cars.php?language=<?= $language ?>" >
       <?= $dictionary[$language.'_cars'] ?>
     </a>
   </nav>
