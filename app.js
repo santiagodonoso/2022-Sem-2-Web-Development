@@ -1,4 +1,6 @@
 async function get_flights(){
+  // Clean the flights div, so we only show fresh results
+  document.querySelector("#flights").innerHTML = ""
   // Get the data from the input field
   const search_for = document.querySelector("#search_flight_from").value
   const conn = await fetch('api-search.php?from_city='+search_for)
