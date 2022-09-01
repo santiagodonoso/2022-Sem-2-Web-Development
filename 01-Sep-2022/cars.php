@@ -1,3 +1,7 @@
+<?php
+require_once __DIR__.'/dictionary.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +12,7 @@
 </head>
 <body>
   <h1>
-    cars
+    <?= $dictionary[$language.'_cars'] ?>
   </h1>
 </body>
 </html>

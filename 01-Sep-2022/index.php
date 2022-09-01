@@ -1,19 +1,6 @@
 <?php
-$languages_allowed = ['en', 'dk', 'sp'];
-$language = $_GET['language'] ?? 'en';
-if( ! in_array($language, $languages_allowed) ){
-  $language = 'en';
-}
-$dictionary=[
-  'en_houses'=>'houses',
-  'dk_houses'=>'huser',
-  'en_cars'=>'cars',
-  'dk_cars'=>'biler',
-  'sp_houses'=>'casas',
-  'sp_cars'=>'carros'  
-]
+require_once __DIR__.'/dictionary.php';
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -25,10 +12,10 @@ $dictionary=[
 </head>
 <body>
   <nav>
-    <a href="houses.php">
+    <a href=<?= "houses.php?language=".$language ?>>
       <?= $dictionary[$language.'_houses'] ?>
     </a>
-    <a href="cars.php">
+    <a href=<?= "cars.php?language=".$language ?>>
       <?= $dictionary[$language.'_cars'] ?>
     </a>
   </nav>
