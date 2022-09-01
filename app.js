@@ -23,6 +23,8 @@ async function get_flights(){
     let div_flight = original_flight_blueprint
     div_flight = div_flight.replace('#from_city#', flight.from_city_name)
     div_flight = div_flight.replace("#departure_time#", flight.departure_time)
+    div_flight = div_flight.replace("#to_city#", flight.to_city_name)
+    div_flight = div_flight.replace("#arrival_time#", flight.arrival_time)
     all_flights += div_flight
   })
   document.querySelector("#flights").insertAdjacentHTML('afterbegin', all_flights);
