@@ -10,6 +10,7 @@
 <body>
 
   <form onsubmit="get_flights(); return false">
+    <input id="search_flight_from" type="text">
     <button>
       Search
     </button>
