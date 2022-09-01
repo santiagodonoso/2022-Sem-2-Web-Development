@@ -25,10 +25,10 @@ $dictionary=[
 </head>
 <body>
   <nav>
-    <a href="houses">
+    <a href="houses.php">
       <?= $dictionary[$language.'_houses'] ?>
     </a>
-    <a href="cars">
+    <a href="cars.php">
       <?= $dictionary[$language.'_cars'] ?>
     </a>
   </nav>
