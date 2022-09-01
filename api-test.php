@@ -7,7 +7,8 @@ try{
   $q->execute();
   $users = $q->fetchAll(PDO::FETCH_ASSOC);
   echo json_encode($users);
-}catch(Exception $ex){
+}
+catch(Exception $ex){
   echo 'error';
 }
 
