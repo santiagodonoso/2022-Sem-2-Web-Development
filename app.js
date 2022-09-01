@@ -17,6 +17,8 @@ async function get_flights(){
   flights.forEach( flight => {
     console.log(flight)
     let div_flight = original_flight_blueprint
+    div_flight = div_flight.replace('#from_city#', flight.from_city_name)
+    div_flight = div_flight.replace("#departure_time#", flight.departure_time)
     all_flights += div_flight
   })
   document.querySelector("#flights").insertAdjacentHTML('afterbegin', all_flights);

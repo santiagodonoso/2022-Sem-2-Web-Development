@@ -16,21 +16,6 @@
   </form>
 
   <div id="flights">
-
-    <div class="flight">
-
-      <div class="from_container">
-        <p>#from_city#</p>
-        <p>Departure: #departure_time#</p>
-      </div>
-
-      <div class="to_container">
-        <p>#to_city#</p>
-        <p>Arrival: #arrival_time#</p>
-      </div>
-
-    </div>
-
   </div>
 
   <script src="app.js"></script>
