@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="app.css">
 </head>
 <body>
+  
   <form onsubmit="get_flights(); return false">
     <button>
       Search
