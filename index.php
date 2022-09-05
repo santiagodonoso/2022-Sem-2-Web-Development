@@ -31,7 +31,7 @@
 
   <h1>
     <?php // $data->en_title ?>
-    <?= $data['en_title'] ?>
+    <?= $data['sp_title'] ?>
   </h1>
 
 </body>
