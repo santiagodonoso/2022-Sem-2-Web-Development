@@ -13,6 +13,15 @@ if( strlen($_POST['user_name']) < NAME_MIN_LEN ){
   echo json_encode(['info'=>'user_name min '.NAME_MIN_LEN.' characters']);
   exit(); 
 }
+if( strlen($_POST['user_name']) > NAME_MAX_LEN ){
+  http_response_code(400);
+  echo json_encode(['info'=>'user_name max '.NAME_MAX_LEN.' characters']);
+  exit(); 
+}
+
+// Success
+echo json_encode(['info'=>'ok']);
+
 
 
 

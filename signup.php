@@ -12,12 +12,16 @@ require_once __DIR__.'/_x.php';
 </head>
 <body>
   
-  <form onsubmit="validate(test); return false">
+  <form id="signup_form" onsubmit="validate(signup); return false">
+    <label for="">
+      Name (min <?= NAME_MIN_LEN ?> max <?= NAME_MAX_LEN ?> characters)
+    </label>
     <input type="text" placeholder="name"
+      maxlength="<?= NAME_MAX_LEN ?>"
       name = "user_name"
       data-validate="str"
-      data-min = "2"
-      data-max= "20"
+      data-min = "<?= NAME_MIN_LEN ?>"
+      data-max= "<?= NAME_MAX_LEN ?>"
     >
     <!-- <input type="text" placeholder="last name"
       data-validate="str"
@@ -43,8 +47,19 @@ require_once __DIR__.'/_x.php';
   <script src="validator.js"></script>
 
   <script>
-    function test(){
-      console.log("yessssss....")
+    async function signup(){
+      const the_form = document.querySelector("#signup_form")
+      console.log(the_form)
+      const conn = await fetch('api-signup.php', {
+        method : "POST",
+        body : new FormData(the_form)
+      })
+      if( ! conn.ok ){
+        console.log("uppssss....")
+        return
+      }
+      // Success
+      console.log("yes....")
     }
   </script>
 
