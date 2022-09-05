@@ -58,8 +58,9 @@ require_once __DIR__.'/_x.php';
         console.log("uppssss....")
         return
       }
+      const data = await conn.json() // Convert text to JSON
       // Success
-      console.log("yes....")
+      console.log(data.message)
     }
   </script>
 
