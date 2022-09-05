@@ -12,14 +12,17 @@ require_once __DIR__.'/_x.php';
 </head>
 <body>
   
-  <form>
+  <form onsubmit="validate(); return false">
     <div>
       <label for="">
         Name (min 2 max <?= NAME_MAX_LEN ?> characters)
       </label>
-      <input type="text" maxlength="<?= NAME_MAX_LEN ?>">
+      <input id="txt_name" type="text" maxlength="<?= NAME_MAX_LEN ?>">
     </div>
+    <button>Signup</button>
   </form>
+
+  <script src="validator.js"></script>
 
 </body>
 </html>

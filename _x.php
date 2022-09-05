@@ -1,5 +1,6 @@
 <?php
-define('NAME_MAX_LEN', 50);
+define('NAME_MIN_LEN', 2);
+define('NAME_MAX_LEN', 20);
 
 
 
