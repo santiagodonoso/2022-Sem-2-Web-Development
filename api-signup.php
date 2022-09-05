@@ -10,7 +10,7 @@ if( ! isset($_POST['user_name']) ){
 }
 if( strlen($_POST['user_name']) < NAME_MIN_LEN ){
   http_response_code(400);
-  echo json_encode(['info'=>"user_name min NAME_MIN_LEN characters"]);
+  echo json_encode(['info'=>'user_name min '.NAME_MIN_LEN.' characters']);
   exit(); 
 }
 
