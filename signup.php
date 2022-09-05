@@ -12,23 +12,22 @@ require_once __DIR__.'/_x.php';
 </head>
 <body>
   
-  <form onsubmit="validate(); return false">
-    <div>
-      <label for="">
-        Name (min 2 max <?= NAME_MAX_LEN ?> characters)
-      </label>
-      <input id="txt_name" type="text" maxlength="<?= NAME_MAX_LEN ?>">
-    </div>
+  <form onsubmit="validate(test); return false">
+    <input type="text" placeholder="name"
+      data-validate="str"
+      data-min = "2"
+      data-max= "20"
+    >
     <button>Signup</button>
   </form>
 
-  <script>
-    const name_min_len = "<?= NAME_MIN_LEN ?>"
-    const name_max_len = "<?= NAME_MAX_LEN ?>"
-    
-  </script>
-
   <script src="validator.js"></script>
+
+  <script>
+    function test(){
+      console.log("yessssss....")
+    }
+  </script>
 
 </body>
 </html>
