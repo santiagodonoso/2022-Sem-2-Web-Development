@@ -23,6 +23,18 @@ require_once __DIR__.'/_x.php';
       data-min = "<?= NAME_MIN_LEN ?>"
       data-max= "<?= NAME_MAX_LEN ?>"
     >
+
+
+    <label for="">
+      Last name (min <?= LAST_NAME_MIN_LEN ?> max <?= LAST_NAME_MAX_LEN ?> characters)
+    </label>
+    <input type="text" placeholder="name"
+      maxlength="<?= NAME_MAX_LEN ?>"
+      name = "user_last_name"
+      data-validate="str"
+      data-min = "<?= NAME_MIN_LEN ?>"
+      data-max= "<?= NAME_MAX_LEN ?>"
+    >    
     <!-- <input type="text" placeholder="last name"
       data-validate="str"
       data-min = "2"
@@ -61,8 +73,15 @@ require_once __DIR__.'/_x.php';
       const data = await conn.json() // Convert text to JSON
       // Success
       console.log(data.message)
+      Swal.fire(
+        'Good job '+data.message,
+        'You clicked the button!',
+        'success'
+      )
     }
   </script>
+
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 </body>
 </html>
