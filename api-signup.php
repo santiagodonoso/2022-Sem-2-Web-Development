@@ -20,7 +20,7 @@ if( strlen($_POST['user_name']) > NAME_MAX_LEN ){
 }
 
 // Success
-echo json_encode(['info'=>'ok', 'message'=>'Hi XXX']);
+echo json_encode(['info'=>'ok', 'message'=>"Hi {$_POST['user_name']}"]);
 
 
 
