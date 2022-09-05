@@ -17,7 +17,7 @@ require_once __DIR__.'/_x.php';
       <label for="">
         Name (min 2 max <?= NAME_MAX_LEN ?> characters)
       </label>
-      <input type="text">
+      <input type="text" maxlength="<?= NAME_MAX_LEN ?>">
     </div>
   </form>
 
