@@ -14,10 +14,29 @@ require_once __DIR__.'/_x.php';
   
   <form onsubmit="validate(test); return false">
     <input type="text" placeholder="name"
+      name = "user_name"
       data-validate="str"
       data-min = "2"
       data-max= "20"
     >
+    <!-- <input type="text" placeholder="last name"
+      data-validate="str"
+      data-min = "2"
+      data-max = "20"
+    >
+    <input type="text" placeholder="email"
+      data-validate = "email"
+    >
+    <input type="password" placeholder="password"
+      name = "password"
+      data-validate = "str"
+      data-min = "5"
+      data-max = "20"
+    >
+    <input type="password" placeholder="confirm password"
+      data-validate="match"
+      data-match-name = "password"
+    > -->
     <button>Signup</button>
   </form>
 
