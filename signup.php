@@ -25,6 +25,7 @@ require_once __DIR__.'/_x.php';
   <script>
     const name_min_len = "<?= NAME_MIN_LEN ?>"
     const name_max_len = "<?= NAME_MAX_LEN ?>"
+    
   </script>
 
   <script src="validator.js"></script>
