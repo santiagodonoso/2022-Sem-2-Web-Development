@@ -1,15 +1,27 @@
 <?php
 define('_ITEM_NAME_MIN_LEN', 2);
 define('_ITEM_NAME_MAX_LEN', 10);
+define('_USER_NAME_MIN_LEN', 2);
+define('_USER_NAME_MAX_LEN', 10);
 
 // ##############################
 function _validate_item_name(){
-  $error_message = 'item_name min 2 max 10 characters';
+  $error_message = 'item_name min '._ITEM_NAME_MIN_LEN.' max '._ITEM_NAME_MAX_LEN.' characters';
   if( ! isset($_POST['item_name']) ){ _respond($error_message, 400); }
   $_POST['item_name'] = trim($_POST['item_name']);
   if( strlen($_POST['item_name']) < _ITEM_NAME_MIN_LEN ){ _respond($error_message, 400); }   
   if( strlen($_POST['item_name']) > _ITEM_NAME_MAX_LEN ){ _respond($error_message, 400); }   
   return $_POST['item_name'];
+}
+
+// ##############################
+function _validate_user_name(){
+  $error_message = 'user_name min '._USER_NAME_MIN_LEN.' max '._USER_NAME_MAX_LEN.' characters';
+  if( ! isset($_POST['user_name']) ){ _respond($error_message, 400); }
+  $_POST['user_name'] = trim($_POST['user_name']);
+  if( strlen($_POST['user_name']) < _USER_NAME_MIN_LEN ){ _respond($error_message, 400); }   
+  if( strlen($_POST['user_name']) > _USER_NAME_MAX_LEN ){ _respond($error_message, 400); }   
+  return $_POST['user_name'];
 }
 
 // ##############################
