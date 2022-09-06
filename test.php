@@ -14,7 +14,7 @@
       type="text" 
       placeholder="email"
       onblur="is_email_available()"
-      onfocus="reset()"
+      onfocus="clean_input()"
     >
     <p style="display: none">
       Email already in use
@@ -22,8 +22,9 @@
   </form>
 
   <script>
-    function reset(){
+    function clean_input(){
       event.target.value = ""
+      console.log('x')
       document.querySelector("p").style.display = "none"
     }
 
