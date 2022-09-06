@@ -12,6 +12,7 @@ function _validate_item_name(){
 
 // ##############################
 function _respond(){
+  header('Content-Type: application/json');
   http_response_code(400);
   $response = ['info'=>'upsss...'];
   echo json_encode($response);
