@@ -1,7 +1,7 @@
 <?php
 define('_ITEM_NAME_MIN_LEN', 2);
 define('_ITEM_NAME_MAX_LEN', 10);
-define('_ITEM_PRICE_REGEX', '/[1-9][0-9]*\.[0-9]{2}/');
+define('_ITEM_PRICE_REGEX', '/^[1-9][0-9]*\.[0-9]{2}/');
 
 define('_USER_NAME_MIN_LEN', 2);
 define('_USER_NAME_MAX_LEN', 20);
