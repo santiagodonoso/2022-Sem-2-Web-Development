@@ -15,10 +15,11 @@ function _validate_item_price(){
   $error_message = 'item_price must be a whole number or have two decimals';
   if(!isset($_POST['item_price'])){ _respond($error_message, 400); }
   $_POST['item_price'] = trim($_POST['item_price']);
-  // 19.00  4556767.00    456576676.00
-  if( ctype_digit($_POST['item_price']) ){
-    $_POST['item_price'] = $_POST['item_price'].'.00';
+  if( ctype_digit($_POST['item_price']) ){ 
+    $_POST['item_price'] = $_POST['item_price'].'.00'; 
   }
+  $_POST['item_price'] = str_replace(',', '.', $_POST['item_price']);
+  if(!preg_match(_ITEM_PRICE_REGEX, $_POST['item_price'])){ _respond($error_message, 400); }
   return $_POST['item_price'];
 }
 
