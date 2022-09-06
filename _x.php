@@ -1,8 +1,9 @@
 <?php
 define('_ITEM_NAME_MIN_LEN', 2);
 define('_ITEM_NAME_MAX_LEN', 10);
+
 define('_USER_NAME_MIN_LEN', 2);
-define('_USER_NAME_MAX_LEN', 10);
+define('_USER_NAME_MAX_LEN', 20);
 
 // ##############################
 function _validate_item_name(){
