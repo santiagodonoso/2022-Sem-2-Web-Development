@@ -3,8 +3,9 @@ require_once __DIR__.'/_x.php';
 
 _validate_item_name();
 
-// Success
-_respond('item created');
+$item = ['item_id'=>uniqid(), 'item_name'=>'A', 'item_price'=>10];
+
+_respond($item);
 
 
 
