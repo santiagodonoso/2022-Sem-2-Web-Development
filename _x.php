@@ -5,9 +5,9 @@ define('_ITEM_NAME_MAX_LEN', 10);
 // ##############################
 function _validate_item_name(){
   $error_message = 'item_name min 2 max 10 characters';
-  if( ! isset($_POST['item_name']) ){
-    _respond(500);
-  }
+  if( ! isset($_POST['item_name']) ){ _respond($error_message, 400); }
+  $_POST['item_name'] = trim($_POST['item_name']);
+  if( strlen($_POST['item_name']) < _ITEM_NAME_MIN_LEN ){ _respond($error_message, 400); }   
 }
 
 // ##############################
