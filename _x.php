@@ -16,7 +16,7 @@ function _validate_item_name(){
 function _respond( $message = '',  $http_response_code = 200 ){
   header('Content-Type: application/json');
   http_response_code($http_response_code);
-  $response = ['info'=>$message];
+  $response = is_array($message) ? $message : ['info'=>$message];
   echo json_encode($response);
   exit();
 }
