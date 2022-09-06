@@ -1,0 +1,21 @@
+from_city_name,to_city_name,from_city_airport_name,to_city_airport_name,departure_time,arrival_time
+Copenhagen,Berlin,Kastrup,Belin International Airport,12:25,14:10
+Miami,Orlando,Miami International Airport,Orlando Internation Airport,15:00,16:10
+Oslo,København,Oslo airport,Kastrup,12:00,15:00
+Berlin,Copenhagen,Berlin-Brandenburg,Kastrup,6:00,7:15
+Tokyo,Hague,Narita International Airport,Rotterdam The Hague Airport,5:35,12:40
+London,New York,London Heathrow,John F. Kennedy International Airport,8:00,16:00
+Verona,Milan,Valerio Catullo Airport,Milan Malpensa Airport,10:40,11:40
+Bruxelles,Hanoi,Luchthaven Zaventem,Noi Bai International Airport,9:35,12:00
+Istanbul,Frankfurt,Istanbul Airport,Frankfurt International Airport ,14:20,18:20
+Paris,London,Charles de Gaulle Airport,London Gatwick,20:30,22:15
+Singapore,Phuket,Singapore Changi Airport,Phuket International Airport,23:15,1:10
+Stockholm,Singapore,Stockholm Arlanda,Singapore Changi,1:30,23:55
+New York,Honululu,JF Kennedy Airport,Honululu Airport,13:00,16:00
+Split,Barcelona,Split Airport,Barcelona Airport,15:20,18:10
+Dublin,Copenhagen,Dublin airport,Kastrup lufthavn,22:10,23:15
+Lima,Cancun,Lima International Airport,Cancun International Airport,14:45,18:30
+Bangkok,Athen,Bangkok Suvarnabhumi (BKK),Athen Intle (ATH),10:50,9:00
+Tel Aviv,Seoul,Ben Gurion Airport,Incheon International Airport,8:10,21:30
+Billund,Cancun,Billund lufthavn,Cancun international airport,10:30,21:45
+Stockholm,Turku,Stockholm Arlanda,Turku Airport,12:00,13:20
