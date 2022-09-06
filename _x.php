@@ -10,6 +10,16 @@ define('_USER_LAST_NAME_MAX_LEN', 20);
 define('_REGEX_EMAIL', '/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/');
 
 // ##############################
+function _validate_email(){
+  $error_message = 'email missing or invalid';
+  if( ! isset($_POST['email']) ){ _respond($error_message, 400); }
+  $_POST['email'] = trim($_POST['email']);
+  if( ! preg_match(_REGEX_EMAIL, $_POST['email']) ){ _respond($error_message, 400); }
+  return $_POST['email'];
+}
+
+
+// ##############################
 function _validate_item_name(){
   $error_message = 'item_name min '._ITEM_NAME_MIN_LEN.' max '._ITEM_NAME_MAX_LEN.' characters';
   if( ! isset($_POST['item_name']) ){ _respond($error_message, 400); }
