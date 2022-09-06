@@ -15,6 +15,9 @@
       placeholder="email"
       onblur="is_email_available()"
     >
+    <p style="display: none">
+      Email already in use
+    </p>
   </form>
 
   <script>
