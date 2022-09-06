@@ -22,7 +22,14 @@
 
   <script>
     async function is_email_available(){
-      console.log('x')
+      const frm = document.querySelector("form")
+      const conn = await fetch('api-is-email-available.php', {
+        method : "POST",
+        body : new FormData(frm)
+      })
+      if( ! conn.ok ){
+        document.querySelector("p").style.display = "block"
+      }
     }
   </script>
 
