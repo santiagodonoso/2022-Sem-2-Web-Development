@@ -14,6 +14,7 @@
       type="text" 
       placeholder="email"
       onblur="is_email_available()"
+      onfocus="reset()"
     >
     <p style="display: none">
       Email already in use
@@ -21,6 +22,12 @@
   </form>
 
   <script>
+    function reset(){
+      event.target.value = ""
+      document.querySelector("p").style.display = "none"
+    }
+
+
     async function is_email_available(){
       const frm = document.querySelector("form")
       const conn = await fetch('api-is-email-available.php', {
