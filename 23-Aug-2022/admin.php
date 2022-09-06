@@ -1,1 +1,0 @@
-Hi <?= $_GET['first-name'] ?>
