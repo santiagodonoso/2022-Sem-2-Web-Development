@@ -9,6 +9,7 @@ function _validate_item_name(){
   $_POST['item_name'] = trim($_POST['item_name']);
   if( strlen($_POST['item_name']) < _ITEM_NAME_MIN_LEN ){ _respond($error_message, 400); }   
   if( strlen($_POST['item_name']) > _ITEM_NAME_MAX_LEN ){ _respond($error_message, 400); }   
+  return $_POST['item_name'];
 }
 
 // ##############################
