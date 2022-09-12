@@ -52,17 +52,6 @@ try{
   </main>
 
 
-
-
-
-
-
-
-
-
-
-
-
   <script>
     async function delete_flight(){
       // console.log(flight_id)
