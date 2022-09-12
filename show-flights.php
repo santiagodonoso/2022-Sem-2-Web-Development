@@ -13,7 +13,8 @@
     <span>Copenhagen</span>
     <span>Amsterdam</span>
     <form>
-      <button onclick="delete_flight('1')">
+      <input name="flight_id" value="1" type="text">
+      <button type="button" onclick="delete_flight('1')">
         🗑️
       </button>
     </form>
@@ -21,7 +22,7 @@
 
   <script>
     async function delete_flight(flight_id){
-      console.log(flight_id)
+      // console.log(flight_id)
       const conn = await fetch('api-delete-flight.php', {
         method : "POST",
         body : new FormData(document.querySelector("form"))
@@ -31,6 +32,8 @@
         // Sweet alert: ups... fligth not found
         console.log(data)
       }
+      // Success
+      console.log(data)
     }
   </script>
 
