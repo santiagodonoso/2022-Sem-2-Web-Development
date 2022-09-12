@@ -54,10 +54,11 @@ try{
 
   <script>
     async function delete_flight(){
-      // console.log(flight_id)
+      const frm = event.target.form
+      console.log(frm)
       const conn = await fetch('api-delete-flight.php', {
         method : "POST",
-        body : new FormData(document.querySelector("form"))
+        body : new FormData(frm)
       })
       const data = await conn.json()
       if( ! conn.ok ){
