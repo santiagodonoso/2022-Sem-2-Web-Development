@@ -26,9 +26,19 @@ try{
     <?php
     foreach($flights as $flight){
     ?>
+
       <div>
-        x
+        <img src="" alt="the image">
+        <span>Copenhagen</span>
+        <span>Amsterdam</span>
+        <form>
+          <input style="display:none" name="flight_id" value="1" type="text">
+          <button type="button" onclick="delete_flight()">
+            🗑️
+          </button>
+        </form>
       </div>
+
     <?php
     }
     ?>
@@ -39,17 +49,7 @@ try{
 
 
 
-  <div>
-    <img src="" alt="the image">
-    <span>Copenhagen</span>
-    <span>Amsterdam</span>
-    <form>
-      <input style="display:none" name="flight_id" value="1" type="text">
-      <button type="button" onclick="delete_flight()">
-        🗑️
-      </button>
-    </form>
-  </div>
+
 
 
 
