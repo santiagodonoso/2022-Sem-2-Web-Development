@@ -5,7 +5,7 @@ try{
   $q = $db->prepare('SELECT * FROM flights');
   $q->execute();
   $flights = $q->fetchAll(PDO::FETCH_ASSOC);
-  // echo json_encode($flights);
+  echo json_encode($flights);
 }catch(Exception $ex){
   echo "Sorry went terribly wrong";
   exit();
