@@ -29,8 +29,12 @@ try{
 
       <div>
         <img src="" alt="the image">
-        <span>Copenhagen</span>
-        <span>Amsterdam</span>
+        <span>
+          <?= $flight['from_city_name'] ?>
+        </span>
+        <span>
+          <?= $flight['to_city_name'] ?>
+        </span>
         <form>
           <input style="display:none" name="flight_id" value="1" type="text">
           <button type="button" onclick="delete_flight()">
