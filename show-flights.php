@@ -8,6 +8,15 @@
 </head>
 <body>
 
+  <main>
+    
+  </main>
+
+
+
+
+
+
   <div>
     <img src="" alt="the image">
     <span>Copenhagen</span>
@@ -19,6 +28,11 @@
       </button>
     </form>
   </div>
+
+
+
+
+
 
   <script>
     async function delete_flight(){
