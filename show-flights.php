@@ -20,8 +20,17 @@
   </div>
 
   <script>
-    function delete_flight(flight_id){
+    async function delete_flight(flight_id){
       console.log(flight_id)
+      const conn = await fetch('api-delete-flight.php', {
+        method : "POST",
+        body : new FormData(document.querySelector("form"))
+      })
+      const data = await conn.text()
+      if( ! conn.ok ){
+        // Sweet alert: ups... fligth not found
+        console.log(data)
+      }
     }
   </script>
 
