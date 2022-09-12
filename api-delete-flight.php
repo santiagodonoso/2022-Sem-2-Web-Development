@@ -19,7 +19,8 @@ if( ! ctype_digit($_POST['flight_id']) ){
 try{
   $db = new PDO('sqlite:'.__DIR__.'/momondo.db');
   $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-  $q = $db->prepare('DELETE FROM flights WHERE id = "1"');
+  $q = $db->prepare('DELETE FROM flights WHERE id = :id');
+  $q->bindValue(':id', $_POST['flight_id']);
   $q->execute();
   // Success
   // echo "flight_id {$_POST['flight_id']}";
