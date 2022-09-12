@@ -5,7 +5,7 @@ try{
   $q = $db->prepare('SELECT * FROM flights');
   $q->execute();
   $flights = $q->fetchAll(PDO::FETCH_ASSOC);
-  echo json_encode($flights);
+  // echo json_encode($flights);
 }catch(Exception $ex){
   echo "Sorry went terribly wrong";
   exit();
@@ -27,6 +27,7 @@ try{
     foreach($flights as $flight){
     ?>
 
+    <form>
       <div>
         <img src="" alt="the image">
         <span>
@@ -35,7 +36,6 @@ try{
         <span>
           <?= $flight['to_city'] ?>
         </span>
-        <form>
           <input style="display:block" 
           name="flight_id" 
           value="<?= $flight['id'] ?>" 
@@ -43,8 +43,8 @@ try{
           <button type="button" onclick="delete_flight()">
             🗑️
           </button>
-        </form>
-      </div>
+        </div>
+      </form>
 
     <?php
     }
@@ -68,6 +68,7 @@ try{
       }
       // Success
       console.log(data)
+      frm.remove()
     }
   </script>
 
