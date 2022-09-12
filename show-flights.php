@@ -36,12 +36,12 @@ try{
         <span>
           <?= $flight['to_city'] ?>
         </span>
-          <input style="display:block" 
+          <input style="display:none" 
           name="flight_id" 
           value="<?= $flight['id'] ?>" 
           type="text">
           <button type="button" onclick="delete_flight()">
-            🗑️
+            🗑️ Delete
           </button>
         </div>
       </form>
