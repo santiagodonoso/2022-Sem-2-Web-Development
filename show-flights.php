@@ -1,3 +1,17 @@
+<?php
+try{
+  $db = new PDO('sqlite:'.__DIR__.'/momondo.db');
+  $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+  $q = $db->prepare('SELECT * FROM flights');
+  $q->execute();
+  $flights = $q->fetchAll(PDO::FETCH_ASSOC);
+  echo json_encode($flights);
+}catch(Exception $ex){
+  echo "Sorry went terribly wrong";
+  exit();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
