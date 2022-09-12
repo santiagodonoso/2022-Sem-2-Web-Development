@@ -30,13 +30,16 @@ try{
       <div>
         <img src="" alt="the image">
         <span>
-          <?= $flight['from_city_name'] ?>
+          <?= $flight['from_city'] ?>
         </span>
         <span>
-          <?= $flight['to_city_name'] ?>
+          <?= $flight['to_city'] ?>
         </span>
         <form>
-          <input style="display:none" name="flight_id" value="1" type="text">
+          <input style="display:block" 
+          name="flight_id" 
+          value="<?= $flight['id'] ?>" 
+          type="text">
           <button type="button" onclick="delete_flight()">
             🗑️
           </button>
