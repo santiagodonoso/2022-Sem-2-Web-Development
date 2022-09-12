@@ -7,18 +7,21 @@
   <title>Document</title>
 </head>
 <body>
+
   <div>
     <img src="" alt="the image">
     <span>Copenhagen</span>
     <span>Amsterdam</span>
-    <button name="1" onclick="delete_flight()">
-      🗑️
-    </button>
+    <form>
+      <button onclick="delete_flight('1')">
+        🗑️
+      </button>
+    </form>
   </div>
 
   <script>
-    function delete_flight(){
-      console.log("x")
+    function delete_flight(flight_id){
+      console.log(flight_id)
     }
   </script>
 
