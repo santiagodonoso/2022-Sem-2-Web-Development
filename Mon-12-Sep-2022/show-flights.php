@@ -40,6 +40,7 @@ try{
           name="flight_id" 
           value="<?= $flight['id'] ?>" 
           type="text">
+          <input name="lastname" type="text" placeholder="lastname">
           <button type="button" onclick="delete_flight()">
             🗑️ Delete
           </button>
