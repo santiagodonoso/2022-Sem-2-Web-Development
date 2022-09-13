@@ -23,6 +23,22 @@ main{
   padding: 1rem;
   color: white;
 }
+.option{
+  display: flex;
+  align-items: center;
+  border-top: 1px solid purple;
+  padding: 1rem 0;
+}
+.option .left{
+  width: 3rem;
+}
+.option .right .top{
+  font-weight: 700;
+}
+.option .right .bottom{
+  font-weight: 300;
+}
+
 h1, h2{
   text-align: center;
   font-size: 1.3rem;

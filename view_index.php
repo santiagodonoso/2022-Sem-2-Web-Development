@@ -19,7 +19,35 @@ require_once __DIR__.'/comp_header.php';
     Here’s why travellers choose momondo
   </h2>
 
-  <div id="options">
+  <div id="options" class="mt1">
+
+    <div class="option">
+      <div class="left">
+        🔖
+      </div>
+      <div class="right">
+        <div class="top">
+          Best travel deals
+        </div>
+        <div class="bottom">
+          Find the best deals available from 900+ travel sites.
+        </div>
+      </div>
+    </div>
+
+    <div class="option">
+      <div class="left">
+        🔖
+      </div>
+      <div class="right">
+        <div class="top">
+          Best travel deals
+        </div>
+        <div class="bottom">
+          Find the best deals available from 900+ travel sites.
+        </div>
+      </div>
+    </div>
 
     <div class="option">
       <div class="left">
@@ -35,6 +63,20 @@ require_once __DIR__.'/comp_header.php';
       </div>
     </div>
     
+    <div class="option">
+      <div class="left">
+        🔖
+      </div>
+      <div class="right">
+        <div class="top">
+          Best travel deals
+        </div>
+        <div class="bottom">
+          Find the best deals available from 900+ travel sites.
+        </div>
+      </div>
+    </div>    
+
   </div>
 
 </main>
