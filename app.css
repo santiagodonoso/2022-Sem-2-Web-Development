@@ -5,11 +5,35 @@
   font-size: 1.1rem;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+.mt1{ margin-top: 1rem; }
 body{
   width: 100vw;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.2);
+  background: #21033a;
   overflow-x: hidden;
+}
+input, button{
+  height: 3rem;
+  border-radius: 0.3rem;
+}
+input{
+  padding: 0 0.5rem;
+}
+main{
+  padding: 1rem;
+  color: white;
+}
+h1, h2{
+  text-align: center;
+  font-size: 1.3rem;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  background: #0095cc;
+  padding: 0.3rem;
+  border-radius: 0.3rem;
 }
 div#menu{
   position: fixed;
