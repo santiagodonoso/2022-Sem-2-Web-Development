@@ -52,3 +52,9 @@ nav a{
 nav div{
   cursor: pointer;
 }
+
+footer{
+  width: 100vw;
+  height: 10rem;
+  background: purple;
+}
