@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="app.css">
   <title>Document</title>
 </head>
-<body>
+<body oncontextmenu="toogle_menu()">
 
   <div id="menu" onclick="toogle_menu()">
     <div class="left">
