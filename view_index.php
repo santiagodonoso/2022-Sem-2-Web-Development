@@ -9,7 +9,7 @@ require_once __DIR__.'/comp_header.php';
     Welcome! Find a flexible flight for your next trip. 
   </h1>
 
-  <form>
+  <form class="mt1">
     <input type="text" placeholder="from">
     <input type="text" placeholder="to">
     <button>Search</button>
