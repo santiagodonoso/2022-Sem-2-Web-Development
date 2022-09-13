@@ -6,7 +6,10 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 body{
+  width: 100vw;
+  height: 100vh;
   background: rgba(0, 0, 0, 0.2);
+  overflow-x: hidden;
 }
 div#menu{
   position: fixed;
