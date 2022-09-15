@@ -1,7 +1,7 @@
 <?php
 
 $data = file_get_contents('https://kea.dk');
-$data = str_replace('KEA', 'Kun idag, en MACBook for 1.000Kr.', $data);
+$data = str_replace('KEA', 'PROXY DATA', $data);
 echo $data;
 
 
