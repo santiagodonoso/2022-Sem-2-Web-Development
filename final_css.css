@@ -1,0 +1,14 @@
+.from_result{
+  padding: 0.5rem;
+  cursor: pointer;
+  border: 1px solid black;
+}
+.from_result:hover{
+  background: rgba(0, 0, 0, 0.5);
+}
+.from_result *{
+  pointer-events: none;
+}
+.hide{
+  display: none;
+}
