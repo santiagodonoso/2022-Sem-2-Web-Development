@@ -1,0 +1,5 @@
+{
+  "en_title":"Title",
+  "dk_title":"Titel",
+  "sp_title":"Título"
+}
