@@ -15,14 +15,26 @@
 
   <div id="from_results">
     <div class="from_result" onclick="select_city()">
-      A
+      <img src="" alt="">
+      <div>
+        <p class="city_name">City A</p>
+        <p>City Airport A</p>
+      </div>
     </div>
     <div class="from_result" onclick="select_city()">
-      B
-    </div>    
+      <img src="" alt="">
+      <div>
+        <p class="city_name">City B</p>
+        <p>City Airport B</p>
+      </div>
+    </div>
     <div class="from_result" onclick="select_city()">
-      C
-    </div>    
+      <img src="" alt="">
+      <div>
+        <p class="city_name">City C</p>
+        <p>City Airport C</p>
+      </div>
+    </div>        
   </div>
 
   <script src="app.js"></script>
