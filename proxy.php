@@ -1,7 +1,7 @@
 <?php
 
-$data = file_get_contents('https://kea.dk');
-$data = str_replace('KEA', 'PROXY DATA', $data);
+$data = file_get_contents('DOMAIN HERE');
+$data = str_replace('SOME DATA', 'SOME NEW DATA', $data);
 echo $data;
 
 
