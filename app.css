@@ -1,0 +1,8 @@
+.from_result{
+  height: 3rem;
+  cursor: pointer;
+  border: 1px solid black;
+}
+.from_result:hover{
+  background: rgba(0, 0, 0, 0.5);
+}

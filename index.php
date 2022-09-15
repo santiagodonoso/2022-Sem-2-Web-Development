@@ -8,28 +8,24 @@
   <link rel="stylesheet" href="app.css">
 </head>
 <body>
-
-  <form onsubmit="get_flights(); return false">
-    <input id="search_flight_from" type="text">
-    <button>
-      Search
-    </button>
+  
+  <form>
+    <input type="text" id="from_city">
   </form>
 
-  <div id="flights">
+  <div id="from_results">
+    <div class="from_result" onclick="select_city()">
+      A
+    </div>
+    <div class="from_result" onclick="select_city()">
+      B
+    </div>    
+    <div class="from_result" onclick="select_city()">
+      C
+    </div>    
   </div>
 
   <script src="app.js"></script>
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
